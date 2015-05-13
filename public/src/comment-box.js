@@ -1,9 +1,3 @@
-var data = [
-  {author: "Pete Hunt", text: "This is one comment"},
-  {author: "Jordan Walke", text: "This is *another* comment"},
-  {author: "Adam Berman", text: "A new comment"}
-];
-
 var CommentForm = React.createClass({
   render: function() {
     return (
@@ -58,6 +52,6 @@ var Comment = React.createClass({
 });
 
 React.render(
-  <CommentBox data={data}/>,
+  <CommentBox url="comments.json"/>,
   document.getElementById('content')
 );
