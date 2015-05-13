@@ -1,7 +1,6 @@
 var data = [
   {author: "Pete Hunt", text: "This is one comment"},
-  {author: "Jordan Walke", text: "This is *another* comment"},
-  {author: "Adam Berman", text: "A new comment"}
+  {author: "Jordan Walke", text: "This is *another* comment"}
 ];
 
 var CommentForm = React.createClass({displayName: "CommentForm",
