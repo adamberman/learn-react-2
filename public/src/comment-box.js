@@ -60,6 +60,10 @@ var CommentBox = React.createClass({
     });
   },
 
+  handleCommentSubmit: function(comment) {
+    // submit to server
+  },
+
   componentDidMount: function() {
     this.loadCommentsFromServer();
     setInterval(this.loadCommentsFromServer, this.props.pollInterval);
@@ -70,7 +74,7 @@ var CommentBox = React.createClass({
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data={this.state.data}/>
-        <CommentForm />
+        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
   }
